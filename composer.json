@@ -1,0 +1,40 @@
+{
+    "name": "psc-acme/api-inventory",
+    "description": "Package api-inventory for psc-acme organization",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\ApiInventory\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.2",
+        "vlucas/phpdotenv": "^5.0",
+        "doctrine/dbal": "^4.0",
+        "psc-acme/decoder-order": "^1.0",
+        "psc-acme/gateway-catalog": "^1.0"
+    },
+    "require-dev": {
+        "fakerphp/faker": "^1.0",
+        "symfony/phpunit-bridge": "^7.0",
+        "webforge/object-asserter": "^2.0.0"
+    },
+    "minimum-stability": "stable",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
